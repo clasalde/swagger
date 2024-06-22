@@ -1,0 +1,107 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .carousel-inner img { height: 400px; /* Set the height you want for your
+      images */ object-fit: cover; /* Ensure the images cover the entire area */
+      } .encabezado { background-color: #725202; } .encabezado .navbar-nav
+      .nav-item .nav-link { color: white; font-weight: bold; margin-left: 15px;
+      } .encabezado .navbar-nav .nav-item .nav-link:hover { color: #d4d4d4; }
+      .encabezado .navbar-brand { color: white; font-weight: bold; }
+      .welcome-message { text-align: center; margin-top: 30px; margin-bottom:
+      30px; } .welcome-message h1 { font-size: 2.5rem; font-weight: bold; }
+      .welcome-message p { font-size: 1.25rem; color: #555; }
+    </style>
+    <title>Image Carousel</title>
+  </head>
+  <body>
+    <!-- Custom Header -->
+    <header class="navbar navbar-expand-lg encabezado">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Woody´s World</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/login">Come In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/register">Join Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/api/users/profile">Your Account</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Welcome Message -->
+    <div class="container">
+      <div class="welcome-message">
+        <h1>Here´s where your little story begins</h1>
+        <p>Sheriff Woody is here to help you!</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Cartoons-PNG/Toy_Story_Sheriff_Woody_PNG_Cartoon_Image.png?m=1629784191"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>
